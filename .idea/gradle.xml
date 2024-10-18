@@ -3,8 +3,37 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/buildSrc" name="buildSrc">
+                <projects>
+                  <project path="$PROJECT_DIR$/buildSrc" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleHome" value="" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/buildSrc" />
+            <option value="$PROJECT_DIR$/module-adapters" />
+            <option value="$PROJECT_DIR$/module-adapters/adapter-http" />
+            <option value="$PROJECT_DIR$/module-adapters/adapter-persistence" />
+            <option value="$PROJECT_DIR$/module-apps" />
+            <option value="$PROJECT_DIR$/module-apps/app-api" />
+            <option value="$PROJECT_DIR$/module-apps/app-batch" />
+            <option value="$PROJECT_DIR$/module-commons" />
+            <option value="$PROJECT_DIR$/module-core" />
+            <option value="$PROJECT_DIR$/module-core/core-domain" />
+            <option value="$PROJECT_DIR$/module-core/core-port" />
+            <option value="$PROJECT_DIR$/module-core/core-service" />
+            <option value="$PROJECT_DIR$/module-core/core-usecase" />
+          </set>
+        </option>
       </GradleProjectSettings>
     </option>
   </component>
